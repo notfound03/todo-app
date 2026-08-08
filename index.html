@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+
+  <!-- Link to our CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <!-- Page heading -->
+    <h1>My To-Do List</h1>
+
+    <!-- Area where the user types a new task -->
+    <section class="input-section">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Enter a new task..."
+        aria-label="New task"
+      >
+      <button id="add-btn" type="button">Add Task</button>
+    </section>
+
+    <!-- Empty section where tasks will appear later -->
+    <section class="tasks-section">
+      <h2>Tasks</h2>
+
+      <!-- Filter buttons -->
+      <div class="filter-buttons">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="active">Active</button>
+        <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="task-list">
+        <!-- Tasks will be added here with JavaScript later -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- Link to our JavaScript file (placed at the end so the HTML loads first) -->
+  <script src="script.js"></script>
+</body>
+</html>
